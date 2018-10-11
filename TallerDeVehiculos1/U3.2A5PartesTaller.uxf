@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.4">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>40</y>
+      <w>150</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Lector
+--
+br: bufferedReader
+--
+&lt;&lt;create&gt;&gt; Lectopr()
+leerByte(): byte
+leerShort(): short
+leerChar(): char
+leerInt(): int
+leerLong(): long
+leerFloat(): float
+leerDouble(): double
+leerString(): String
+leerBoolean(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>200</x>
+      <y>330</y>
+      <w>220</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Parte
+--
+codigo: int
+descripcion: String
+importe: double
+--
+&lt;&lt;create&gt;&gt; Parte()
+setCodigo(args: iht): void
+getCodigo(): int
+setDescripcion(args: String): void
+getDescripcion(): String
+setImporte(args: double): void
+getImporte(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>580</x>
+      <y>320</y>
+      <w>280</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>GestionPartes
+--
+matricula: String
+parte: Parte
+partes: ArrayList&lt;Parte&gt;
+informe: HashMap&lt;String, ArrayList&lt;Parte&gt;&gt;
+--
+añadirParte(): void
+listarPartes(): void
+mostrarPartes(): void
+borrarParte(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>110</y>
+      <w>190</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;30;170;210</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>390</x>
+      <y>390</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;30;190;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>630</x>
+      <y>550</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Actividad5
+--
+--
+main (args: String[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>680</x>
+      <y>460</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;90</additional_attributes>
+  </element>
+</diagram>
